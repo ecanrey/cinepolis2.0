@@ -1,0 +1,40 @@
+.proximamente-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.titulo-pelicula {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ff0000;
+}
+
+.video-container {
+    margin: 20px 0;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 10px 0;
+}
+
+.sinopsis {
+    font-size: 1em;
+    color: #555;
+    margin: 20px 0;
+}
+
+.fecha-estreno {
+    font-size: 1.2em;
+    color: #e63946;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}

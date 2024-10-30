@@ -1,0 +1,77 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  background-image: url('C:\Users\canre\Desktop\proyecto-final\public\imagenes\Login.jpg'); /* Ruta actualizada para la imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fija la imagen de fondo */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f0f8ff;
+}
+
+.login-box {
+  background: rgba(0, 0, 50, 0.7);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  text-align: center;
+}
+
+.login-box h2 {
+  color: #e0e0ff;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+.login-box button {
+  background-color: #3a6ea5;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.login-box button:hover {
+  background-color: #335c81;
+}
+
+.login-box p {
+  color: #d3d3e7;
+  margin-top: 20px;
+}
+
+.login-box a {
+  color: #78a6c8;
+  text-decoration: none;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}

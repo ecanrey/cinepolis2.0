@@ -1,0 +1,83 @@
+/* Hoy.css */
+.promotions-title {
+    text-align: center;
+    font-size: 1.5rem; /* Aumenta el tamaño del título */
+    margin-bottom: 10px;
+}
+
+.peliculas-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las películas se envuelvan en la fila */
+    justify-content: center; /* Centra las películas horizontalmente */
+    margin: 20px 0; /* Margen superior e inferior para separar las películas del contenido */
+}
+
+.pelicula-container {
+    display: flex;
+    flex-direction: column; /* Alinea la imagen y el texto en columna */
+    align-items: center; /* Centra el contenido de cada película */
+    gap: 10px; /* Espacio entre los elementos dentro del contenedor de película */
+    padding: 20px;
+    background-color: #f4f4f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 250px; /* Ajusta el ancho máximo de cada película */
+    margin: 10px; /* Espaciado entre los contenedores de películas */
+    transition: transform 0.2s; /* Agrega una transición suave para el efecto de hover */
+}
+
+.pelicula-container:hover {
+    transform: scale(1.05); /* Efecto de agrandar al pasar el mouse */
+}
+
+.pelicula-imagen {
+    width: 100%; /* Hace que la imagen ocupe el ancho máximo del contenedor */
+    height: auto;
+    border-radius: 8px;
+}
+
+.seats-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 8px; /* Agrega bordes redondeados al modal */
+}
+
+.seats-layout {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.seat {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s; /* Transición suave al cambiar de color */
+}
+
+.seat.selected {
+    background-color: lightgreen; /* Color para los asientos seleccionados */
+}
+
+.seat:hover {
+    background-color: #d3d3d3; /* Color al pasar el mouse por encima de un asiento no seleccionado */
+}

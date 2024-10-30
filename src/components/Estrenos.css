@@ -1,0 +1,39 @@
+.estrenos-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.estrenos-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en filas en pantallas pequeñas */
+}
+
+.estrenos-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    background-color: #f4f4f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Asegura que las esquinas redondeadas afecten también a la imagen */
+    transition: transform 0.2s; /* Efecto de escalado al pasar el mouse */
+}
+
+.estrenos-card:hover {
+    transform: scale(1.05); /* Escala la tarjeta ligeramente al pasar el mouse */
+}
+
+.estrenos-card img {
+    width: 100%;
+    height: 300px; /* Altura uniforme para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el área sin distorsión */
+}
+
+.estrenos-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
